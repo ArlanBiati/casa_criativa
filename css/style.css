@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  background-color: #e5e5e5;
+  color: #25282b;
+}
+
+.container {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+section {
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+div.description {
+  display: grid;
+  width: 100%;
+  max-width: 350px;
+}
+
+section div.description img {
+  width: 350px;
+  justify-self: center;
+  margin-bottom: 50px;
+}
+
+div.description p {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+
+p strong.strong {
+  color: #ff5e84;
+}
+
+div.button {
+  justify-self: center;
+  
+}
+
+div button {
+
+  border: none;
+  background: none;
+  font-weight: bold;
+  color: #ff5e84;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 50px 0 50px 0;
+}
+
+button.fat {
+  background-color: #ff5e84;
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+  width: 175px;
+  height: 50px;
+  margin-left: 20px;
+}
+
+p.footer {
+  justify-self: center;
+  color: #494b4d;
+}
+
+p.footer a{
+  color: #494b4d;
+  text-decoration: none;
+}
+
+div.ideias {
+  display: grid;
+  gap: 40px;
+}
+
+div.ideia {
+  background-color: white;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+}
+
+div.ideia img {
+  width: 120px;
+  height: 120px;
+  justify-self: center;
+}
+
+div.card-description {
+  display: grid;
+}
+
+div.ideia h1 {
+  font-size: 19px;
+}
+
+div.ideia p.modality {
+  font-size: 13px;
+  color: #787a7c;
+  margin: 5px 0 15px 0;
+}
+
+div.ideia p {
+  font-size: 17px;
+  line-height: 27px;
+}
+
+div.ideia p.go-idea {
+  margin-right: 50px;
+  justify-self: end;
+}
+
+div.ideia p a {
+  text-decoration: none;
+  color: #ff5e84;
+  font-weight: bold;
+}
+
+div.ideia:hover {
+  border: 3px solid #ff5e84;
+}
