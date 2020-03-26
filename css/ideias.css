@@ -1,0 +1,245 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  background-color: #e5e5e5;
+  color: #25282b;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+/* ============= HEADER ================== */
+
+header {
+  max-height: 70px;
+  height: 100%;
+  margin: 5% 0;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+nav img {
+  justify-self: start;
+}
+
+nav div {
+  justify-self: end;
+  display: flex;
+}
+
+nav div li {
+  list-style: none;
+  margin-left: 40px;
+}
+
+nav div li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+nav div li a.button {
+  background-color: #FF5e84;
+  color: white;
+  padding: 20px 50px;
+  border-radius: 10px;
+}
+
+/* ============ SECTION ==============*/
+
+section.ideias {
+  text-align: center;
+  margin: 5% 0;
+}
+
+section.ideias p {
+  color: #787a7c;
+  margin-bottom: 5px;
+}
+
+section.ideias h1 {
+  font-size: 30px;
+}
+
+/* =================== MAIN ================ */
+
+main .ideias {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+main .card-ideia {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  justify-items: center;
+  background-color: white;
+  border-radius: 20px;
+  padding: 5%;
+  gap: 15px;
+}
+
+.card-ideia img {
+  width: 120px;
+  height: 120px;
+}
+
+.card-ideia .card-description {
+  display: grid;
+}
+
+.card-ideia .card-description h1 {
+  font-size: 20px;
+}
+
+.card-ideia .card-description p.modality {
+  font-size: 13px;
+  color: #787a7c;
+  margin: 10px 0 15px 0;
+}
+
+.card-ideia .card-description p {
+  font-size: 17px;
+  line-height: 27px;
+}
+
+.card-ideia .card-description a {
+  text-decoration: none;
+  margin-right: 50px;
+  margin-top: 15px;
+  justify-self: end;
+  color: #FF5e84;
+  font-weight: bold;
+}
+
+/* ============= FOOTER ================ */
+
+footer {
+  text-align: center;
+  margin: 5% 0;
+}
+
+footer p a{
+  text-decoration: none;
+  color: #FF5e84;
+}
+
+/* ============= HOVER ============ */
+
+nav li a:hover {
+  color: #FF5e84;
+  transition: 400ms;
+}
+
+nav li a.button:hover {
+  background-color: #0984e3;
+  transition: 400ms;
+  text-decoration: none;
+}
+
+.card-ideia:hover {
+  border: 2px solid #0984e3;
+}
+
+
+/* ============== MODAL ============== */
+
+.modal {
+  background-color: #ff5e84;
+  position: absolute;
+  top: 5%;
+  left: 20%;
+  height: 90vh;
+  width: 60vw;
+  display: flex;
+  border-radius: 20px;
+
+
+}
+
+.content {
+  margin: 40px auto;
+  color: white;  
+}
+
+.content h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.content form {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 05%;
+}
+
+.content form div:nth-child(3), 
+.content form div:nth-child(4), 
+.content form div:nth-child(5) {
+  grid-column: span 2;
+}
+
+.content form input, form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(141, 25, 52, 0.5);
+  font-size: 16px;
+  outline: none;
+}
+
+.content form label {
+  font-weight: bold;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+}
+
+.content form button {
+  border: none;
+  background-color: white;
+  width: 150px;
+  height: 40px;
+  border-radius: 6px;
+  cursor: pointer;
+  align-self: flex-end;
+  font-size: 16px;
+  font-weight: bold;
+  color: #FF5e84;
+}
+
+.content form button.salvar {
+  justify-self: flex-end;
+}
+
+.content form button:hover {
+  background-color: #0984e3;
+  color: white;
+  text-decoration: none;
+  transition: 400ms;
+}
+
+.hide {
+  display: none;
+}

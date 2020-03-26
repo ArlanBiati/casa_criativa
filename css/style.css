@@ -12,13 +12,13 @@ html, body {
 }
 
 .container {
-  max-width: 1600px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  padding: 7% 2%;
 }
 
 section {
-  padding-top: 100px;
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
@@ -83,7 +83,7 @@ p.footer a{
 
 div.ideias {
   display: grid;
-  gap: 40px;
+  gap: 5%;
 }
 
 div.ideia {
@@ -102,6 +102,7 @@ div.ideia img {
 
 div.card-description {
   display: grid;
+  margin: 0 auto;
 }
 
 div.ideia h1 {
@@ -132,4 +133,88 @@ div.ideia p a {
 
 div.ideia:hover {
   border: 3px solid #ff5e84;
+}
+
+
+
+/* ============= MODAL ================= */
+
+.modal {
+  background-color: #ff5e84;
+  position: absolute;
+  top: 5%;
+  left: 20%;
+  height: 90vh;
+  width: 60vw;
+  display: flex;
+  border-radius: 20px;
+
+
+}
+
+.content {
+  margin: 40px auto;
+  color: white;  
+}
+
+.content h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.content form {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 05%;
+}
+
+.content form div:nth-child(3), 
+.content form div:nth-child(4), 
+.content form div:nth-child(5) {
+  grid-column: span 2;
+}
+
+.content form input, form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(141, 25, 52, 0.5);
+  font-size: 16px;
+  outline: none;
+}
+
+.content form label {
+  font-weight: bold;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+}
+
+.content form button {
+  background-color: white;
+  width: 150px;
+  height: 40px;
+  border-radius: 6px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.content form button:hover {
+  background-color: #0984e3;
+  color: white;
+  text-decoration: none;
+}
+
+.content form button.salvar {
+  justify-self: flex-end;
+}
+
+.hide {
+  display: none;
 }
