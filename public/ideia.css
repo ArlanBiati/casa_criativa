@@ -142,7 +142,7 @@ footer p a{
 /* ============= HOVER ============ */
 
 nav li a:hover {
-  color: #FF5e84;
+  color: #0984e3;
   transition: 400ms;
 }
 
@@ -152,8 +152,9 @@ nav li a.button:hover {
   text-decoration: none;
 }
 
-.card-ideia:hover {
-  border: 2px solid #0984e3;
+.card-ideia a:hover {
+  color: #0984e3;
+  transition: 0.4s;
 }
 
 

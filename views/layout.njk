@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block head %}
+    {% endblock head %}
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://image.flaticon.com/icons/svg/2728/2728832.svg" type="image/x-icon">
+    <title>Casa Criativa</title>
+  </head>
+
+  <body>
+
+    {% block main %}
+
+    {% endblock main %}
+
+
+    <!--MODAL-->
+
+    {% include 'modal.njk' %}
+
+    <script src="js/script.js"></script>
+
+  </body>
+
+</html>

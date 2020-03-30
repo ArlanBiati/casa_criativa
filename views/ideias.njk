@@ -1,0 +1,58 @@
+{% extends 'layout.njk' %}
+
+{% block head %}
+  <link rel="stylesheet" href="/ideias.css">
+{% endblock head %}
+
+{% block main %}
+  
+    <header>
+      <div class="container">
+        <nav>
+          <img src="/img/logo.png" alt="imagem da logomarca">
+          <div>
+            <li><a href="/">Início</a></li>
+            <li><a href="ideias">Ideias</a></li>
+            <li><a href="#" class="button" onclick="onOff()">Nova Ideia</a></li>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="ideias">
+      <div class="container">
+        <p>em exibição</p>
+        <h1>Ideias</h1>
+      </div>
+    </section>
+
+    <main class="container">
+
+      <div class="ideias">
+
+        {% for ideia in ideias %}
+        
+
+          <div class="card-ideia">
+            <img src="{{ ideia.image }}" alt="Icone curso programação">
+            <div class="card-description">
+              <h1>{{ ideia.title }}</h1>
+              <p class="modality">{{ ideia.modality }}</p>
+              <p>{{ ideia.description }}</p>
+              <a href="{{ ideia.url }}">Ir para Ideia</a></p>
+            </div>
+          </div>
+
+        {% endfor %}
+
+      </div>
+
+    </main>
+
+    <footer>
+      <p class="footer">Com ❤️ 
+        <a href="https://www.rocketseat.com.br" target="_blank">Rocketseat</a>
+      </p>
+    </footer>
+
+{% endblock main %}

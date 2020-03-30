@@ -25,6 +25,7 @@ section {
 
 div.description {
   display: grid;
+  max-height: 700px;
   width: 100%;
   max-width: 350px;
 }
@@ -32,13 +33,12 @@ div.description {
 section div.description img {
   width: 350px;
   justify-self: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 div.description p {
   font-size: 18px;
   line-height: 28px;
-  margin-bottom: 30px;
 }
 
 p strong.strong {
@@ -92,6 +92,7 @@ div.ideia {
   display: grid;
   grid-template-columns: 1fr 4fr;
   align-items: center;
+  padding: 3%;
 }
 
 div.ideia img {
@@ -122,6 +123,7 @@ div.ideia p {
 
 div.ideia p.go-idea {
   margin-right: 50px;
+  margin-top: 10px;
   justify-self: end;
 }
 
@@ -131,8 +133,20 @@ div.ideia p a {
   font-weight: bold;
 }
 
-div.ideia:hover {
-  border: 3px solid #ff5e84;
+div.ideia p a:hover {
+  color: #0984e3;
+  transition: 0.4s;
+}
+
+div button:hover {
+  color: #0984e3;
+  transition: 0.4s;
+}
+
+div button.fat:hover {
+  background-color: #0984e3;
+  color: white;
+  transition: 0.4s;
 }
 
 
@@ -141,7 +155,7 @@ div.ideia:hover {
 
 .modal {
   background-color: #ff5e84;
-  position: absolute;
+  position: fixed;
   top: 5%;
   left: 20%;
   height: 90vh;

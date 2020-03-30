@@ -1,0 +1,24 @@
+{% extends 'layout.njk' %}
+
+
+{% block head %}
+  <link rel="stylesheet" href="/ideia.css">
+{% endblock head %}
+
+
+{% block main %}
+
+  <div class="card-ideia">
+    <img src="{{ ideia.image }}" alt="Icone curso programação">
+    <div class="card-description">
+      <h1>{{ ideia.title }}</h1>
+      <p class="modality">{{ ideia.modality }}</p>
+      <p>{{ ideia.description }}</p>
+      <a href="{{ ideia.url }}">Ir para Ideia</a></p>
+    </div>
+  </div>
+
+
+
+
+{% endblock main %}

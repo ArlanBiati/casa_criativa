@@ -1,0 +1,62 @@
+{% extends 'layout.njk' %}
+
+{% block head %}
+  <link rel="stylesheet" href="/style.css">
+{% endblock head %}
+
+{% block main %}
+
+    <section class="container" id="intro" >
+
+      <div class="description">
+
+        <img src="/img/logo.png" alt="Imagem do logo">
+
+        <p>
+          Ficar em casa em períodos longos, não deve ser nada fácil.
+        </p>
+
+        <p>
+          Por isso, iremos catalogar ideias,<strong>brincadeiras, jogos, filmes, livros, cursos, dicas</strong>
+          e tudo que for necessário para tornar esse momento mais interessante.
+        </p>
+
+        <p>
+          Comece clicando em <strong class="strong">ver ideias</strong> para ver as ideias cadastradas e contribua 
+          <strong class="strong">adicionando a sua ideia</strong>
+        </p>
+
+        <div class="button">
+          <button onclick="onOff()">+ Adicionar Ideia</button>
+          <button class="fat">Ver Ideias</button>
+        </div>
+
+
+        <p class="footer">Com ❤️ <a href="https://www.rocketseat.com.br">Rocketseat</a></p>
+
+      </div>  
+
+      <div class="ideias">
+
+        {% for ideia in ideias %}
+        
+          <div class="ideia">
+
+            <img src="{{ ideia.image }}" alt="Icone curso programação">
+
+            <div class="card-description">
+              <h1>{{ ideia.title }}</h1>
+              <p class="modality">{{ ideia.modality }}</p>
+              <p>{{ ideia.description }}</p>
+              <p class="go-idea"><a href="{{ ideia.url }}">Ir para Ideia</a></p>
+            </div>
+
+          </div>
+
+        {% endfor %}
+
+      </div>
+
+    </section>
+
+{% endblock main %}
