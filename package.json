@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/ArlanBiati/casa_criativa#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "nodemon": "^2.0.2",
     "nunjucks": "^3.2.1"
   }
